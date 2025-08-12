@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Load environment variables
 load_dotenv()
-api_key = "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"
+api_key = os.getenv("OPENROUTER_API_KEY")
 
 # Page config
 st.set_page_config(page_title="🍽️ OpenRecipeBot", layout="centered")
